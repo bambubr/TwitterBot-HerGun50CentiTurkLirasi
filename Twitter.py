@@ -14,4 +14,4 @@ class Bot:
 
     def publicar(self, api, dolar, dataHora):
         #media = api.media_upload(filename="ImagensCriadas/MeioDolar.jpg")
-        api.update_with_media(filename="ImagensCriadas/MeioDolar.jpg", status="Valor do dólar: R$ " + (round(dolar, 2)) + "\nVerificado em: " + dataHora), 
+        api.update_with_media(filename="ImagensCriadas/MeioDolar.jpg", status="Valor do dólar: R$ " + dolar + "\nVerificado em: " + dataHora), 

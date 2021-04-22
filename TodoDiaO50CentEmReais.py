@@ -21,4 +21,4 @@ img.CriarImagemAlterada()
 # acessar a api do twitter e publicar a imagem
 bot = Bot(consumer_key, consumer_secret, access_token, access_token_secret)
 api = bot.authenticate()
-bot.publicar(api, str(dolar), dataCotacao)
+bot.publicar(api, str(round(dolar, 2)), dataCotacao)
