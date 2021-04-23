@@ -4,7 +4,7 @@
 
 ## Principais ferramentas utilizadas
 
-* ***Conta de desenvolvedor no Twitter**
+* **Conta de desenvolvedor no Twitter**
 	* Para utilizar a *Application Programming Interface* (API) do Twitter, é necessário solicitar uma conta de desenvolvedor;
 	* Para acessar a página de solicitação, [clique aqui](https://developer.twitter.com/en/apply-for-access).
 * **Biblioteca [Tweepy](https://www.tweepy.org/)**
