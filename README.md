@@ -1,5 +1,5 @@
 # TwitterBot-TodoDiaO50CentEmReais
- Código do bot do Twitter "Todo dia o 50 Cent em reais" ([@MeioDolar])(https://twitter.com/MeioDolar),que busca a cotação do dólar e publica com uma imagem do rapper 50 Cent convertido em reais.
+ Código do bot do Twitter "Todo dia o 50 Cent em reais" ([@MeioDolar](https://twitter.com/MeioDolar)),que busca a cotação do dólar e publica com uma imagem do rapper 50 Cent convertido em reais.
  Inspirado na página do facebook "[Todo dia o 50 Cent convertido em real brasileiro](https://www.facebook.com/50centemreais)".
 
 ## Principais ferramentas utilizadas
