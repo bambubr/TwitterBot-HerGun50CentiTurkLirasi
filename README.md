@@ -1,13 +1,12 @@
 # TwitterBot-TodoDiaO50CentEmReais
- Código do bot do Twitter "Todo dia o 50 Cent em reais" ([@MeioDolar](https://twitter.com/MeioDolar)),que busca a cotação do dólar e publica com uma imagem do rapper 50 Cent convertido em reais.
+ Código do [@MeioDolar](https://twitter.com/MeioDolar), bot que publica todo dia o 50 Cent convertido em real brasileiro.
  Inspirado na página do facebook "[Todo dia o 50 Cent convertido em real brasileiro](https://www.facebook.com/50centemreais)".
 
 ## Principais ferramentas utilizadas
-
 * **Conta de desenvolvedor no Twitter**
 	* Para utilizar a *Application Programming Interface* (API) do Twitter, é necessário solicitar uma conta de desenvolvedor;
 	* Para acessar a página de solicitação, [clique aqui](https://developer.twitter.com/en/apply-for-access).
-* **Biblioteca [Tweepy](https://www.tweepy.org/)**
+* **Biblioteca Tweepy**
 	* "Twitter for Python!";
 	* A documentação do Tweepy pode ser acessada [nesse link](http://docs.tweepy.org/en/latest/);
 	* Se precisar da ajuda de outras pessoas ou quiser compartilhar algo que fez, existe o [servidor do Discord do Tweepy](https://discord.gg/bJvqnhg).
