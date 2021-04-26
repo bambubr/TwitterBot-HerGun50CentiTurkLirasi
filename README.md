@@ -11,5 +11,5 @@
 	* A documentação do Tweepy pode ser acessada [nesse link](http://docs.tweepy.org/en/latest/);
 	* Se precisar da ajuda de outras pessoas ou quiser compartilhar algo que fez, existe o [servidor do Discord do Tweepy](https://discord.gg/bJvqnhg).
 * **Heroku**
-	* "Heroku é uma plataforma em nuvem como um serviço que suporta várias linguagens de programação. Uma das primeiras plataformas em nuvem, o Heroku está em desenvolvimento desde junho de 2007, quando suportava apenas a linguagem de programação Ruby, mas agora suporta Java, Node.js, Scala, Clojure, Python, PHP e Go" ([Wikipédia](https://en.wikipedia.org/wiki/Heroku));
+	* "Heroku é uma plataforma em nuvem como um serviço que suporta várias linguagens de programação." ([Wikipédia](https://en.wikipedia.org/wiki/Heroku));
 	* A documentação do Heroku pode ser acessada [nesse link](https://devcenter.heroku.com/).
