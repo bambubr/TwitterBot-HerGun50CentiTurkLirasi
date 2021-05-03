@@ -1,6 +1,5 @@
 # TwitterBot-TodoDiaO50CentEmReais
- Código do <a href="https://twitter.com/MeioDolar" target="_blank">@MeioDolar</a>, bot que tuíta todo dia o 50 Cent convertido em real brasileiro.
-
+ Código do <a href="https://twitter.com/MeioDolar" target="_blank">@MeioDolar</a>, bot que tuíta todo dia o 50 Cent convertido em real brasileiro.<br>
  Inspirado na página do facebook "<a href="https://www.facebook.com/50centemreais" target="_blank">Todo dia o 50 Cent convertido em real brasileiro</a>".
 
 ## Principais ferramentas utilizadas
