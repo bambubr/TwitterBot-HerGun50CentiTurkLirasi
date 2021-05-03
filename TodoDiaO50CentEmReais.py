@@ -15,10 +15,10 @@ dolar = cotDolar.retornarValorDolar()
 dataCotacao = cotDolar.retornarData()
 
 # criar/sobrescrever a imagem MeioDolar.jpg
-img = Imagem("R$ " + str(round(dolar/2, 2)))
-img.CriarImagemAlterada()
+img = Imagem()
+img.CriarImagemAlterada(dolar)
 
 # acessar a api do twitter e publicar a imagem
 bot = Bot(consumer_key, consumer_secret, access_token, access_token_secret)
 api = bot.authenticate()
-bot.publicar(api, str(round(dolar, 2)), dataCotacao)
+bot.publicar(api, dolar, dataCotacao)

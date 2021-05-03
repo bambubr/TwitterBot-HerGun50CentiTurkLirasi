@@ -5,8 +5,8 @@ from PIL import ImageFont
 from PIL import ImageDraw
 
 class Imagem:
-    def __init__ (self, cotacaoDolar):
-       self.cotacaoDolar = cotacaoDolar
+    def __init__ (self):
+        pass
 
     def selecionarImagem(self):
         path = ("BancoDeImagens")
@@ -14,9 +14,10 @@ class Imagem:
         imgEscolhida  = random.choice(imagens)
         return imgEscolhida
 
-    def CriarImagemAlterada(self):
+    def CriarImagemAlterada(self, cotacaoDolar):
+        cotacaoDolar = "R$ " + "{:.2f}".format(round(cotacaoDolar/2, 2))
         img = Image.open("BancoDeImagens/" + self.selecionarImagem())
         draw = ImageDraw.Draw(img)
         font = ImageFont.truetype("Fontes/arial.ttf", round(img.height/5))
-        draw.text((round((img.width - font.getsize(self.cotacaoDolar)[0])/2), img.height-round(img.height/4)), self.cotacaoDolar, font=font, stroke_width=10, stroke_fill='black')
+        draw.text((round((img.width - font.getsize(cotacaoDolar)[0])/2), img.height-round(img.height/4)), cotacaoDolar, font=font, stroke_width=10, stroke_fill='black')
         img.save("ImagensCriadas/MeioDolar.jpg")

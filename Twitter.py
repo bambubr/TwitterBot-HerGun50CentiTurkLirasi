@@ -13,5 +13,5 @@ class Bot:
         return tweepy.API(auth)
 
     def publicar(self, api, dolar, dataHora):
-        #media = api.media_upload(filename="ImagensCriadas/MeioDolar.jpg")
-        api.update_with_media(filename="ImagensCriadas/MeioDolar.jpg", status="Valor do dólar: R$ " + dolar + "\nAtualizado: " + dataHora), 
+        dolar = "{:.2f}".format(round(dolar, 2))
+        api.update_with_media(filename="ImagensCriadas/MeioDolar.jpg", status="Valor do dólar: R$ " + dolar + "\nAtualizado: " + dataHora)
