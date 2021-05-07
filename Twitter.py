@@ -12,6 +12,5 @@ class Bot:
         auth.set_access_token(self.access_token, self.access_token_secret)
         return tweepy.API(auth)
 
-    def publicar(self, api, dolar, dataHora):
-        dolar = "{:.2f}".format(round(dolar, 2))
-        api.update_with_media(filename="ImagensCriadas/MeioDolar.jpg", status="Valor do dólar: R$ " + dolar + "\nAtualizado: " + dataHora)
+    def publicar(self, api, imagem, legenda):
+        api.update_with_media(filename=imagem, status=legenda)
