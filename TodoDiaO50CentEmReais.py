@@ -1,3 +1,4 @@
+from logging import log
 from Imagem import Imagem
 from Twitter import Bot
 from CotacaoDolar import Cotacao
@@ -33,7 +34,7 @@ else:
     elif (dolar < dolarAntes):
         dolarAumentou = False
 arquivo = open("ImagensCriadas/info.txt", "w")
-arquivo.write(str(dolar) + "\n" + dataCotacao)
+arquivo.write(str(dolar))
 
 # criar/sobrescrever a imagem MeioDolar.jpg
 img = Imagem()
@@ -48,3 +49,6 @@ if (dolarMudou):
     else:
         legenda = "O dólar caiu " + random.choice(emojisFelizes) + "\n\nValor do dólar: R$ " + "{:.2f}".format(round(dolar, 2)) + "\nAtualizado: " + dataCotacao
     bot.publicar(api, "ImagensCriadas/MeioDolar.jpg", legenda)
+    print("Postou!")
+else:
+    print("Dólar não mudou!")
