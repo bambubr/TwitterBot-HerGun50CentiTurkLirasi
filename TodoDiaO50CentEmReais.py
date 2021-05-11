@@ -11,8 +11,8 @@ access_token = environ['ACCESS_KEY']
 access_token_secret = environ['ACCESS_SECRET']
 
 # emojis felizes/tristes
-emojisFelizes = ["😊", "😁", "😄", "🥳", "😍", "🥰", "😻", "😆", "😋", "🤑"]
-emojisTristes = ["😭", "😢", "😞", "🙁", "🥺", "😿", "💩", "😾", "😡", "😰"]
+emojisFelizes = [":)"]
+emojisTristes = [":("]
 
 # acessar o json com a cotação do dólar e salvar o valor da cotação + momento da atualização
 cotDolar = Cotacao("https://economia.awesomeapi.com.br/last/USD-BRL")
