@@ -27,12 +27,12 @@ dolarMudou = False
 dolarAumentou = False
 if (round(dolar, 2) != round(dolarAntes, 2)):
     dolarMudou = True
-else:
-    dolarMudou = False
     if (dolar > dolarAntes):
         dolarAumentou = True
     elif (dolar < dolarAntes):
         dolarAumentou = False
+else:
+    dolarMudou = False
 arquivo = open("ImagensCriadas/info.txt", "w")
 arquivo.write(str(dolar))
 
