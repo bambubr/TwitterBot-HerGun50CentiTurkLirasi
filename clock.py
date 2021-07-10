@@ -1,6 +1,6 @@
 from apscheduler.schedulers.blocking import BlockingScheduler
 
-sched = BlockingScheduler(timezone="america/sao_paulo")
+sched = BlockingScheduler(timezone="Europe/Istanbul")
 
 @sched.scheduled_job('cron', day_of_week='mon-fri', hour=10)
 def scheduled_job():
