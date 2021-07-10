@@ -16,7 +16,7 @@ emojisFelizes = ["😊", "😁", "😄", "🥳", "😍", "🥰", "😻", "😆",
 emojisTristes = ["😭", "😢", "😞", "🙁", "🥺", "😿", "💩", "😾", "😡", "😰"]
 
 # acessar o json com a cotacao do dolar e salvar o valor da cotacao com o momento da atualizacao
-cotDolar = Cotacao("https://economia.awesomeapi.com.br/last/USD-BRL")
+cotDolar = Cotacao("https://economia.awesomeapi.com.br/last/USD-TRY")
 dolar = cotDolar.retornarValorDolar()
 dataCotacao = cotDolar.retornarData()
 
@@ -45,10 +45,10 @@ if (dolarMudou):
     bot = Bot(consumer_key, consumer_secret, access_token, access_token_secret)
     api = bot.authenticate()
     if (dolarAumentou):
-        legenda = "O dólar subiu " + random.choice(emojisTristes) + "\n\nValor do dólar: R$ " + "{:.2f}".format(round(dolar, 2)) + "\nAtualizado: " + dataCotacao
+        legenda = "Dolar yükseldi " + random.choice(emojisTristes) + "\n\nDolar değeri: " + "{:.2f}".format(round(dolar, 2)) + "TL" + "\nGüncellendi: " + dataCotacao
     else:
-        legenda = "O dólar caiu " + random.choice(emojisFelizes) + "\n\nValor do dólar: R$ " + "{:.2f}".format(round(dolar, 2)) + "\nAtualizado: " + dataCotacao
+        legenda = "Dolar düştü " + random.choice(emojisFelizes) + "\n\nDolar değeri: " + "{:.2f}".format(round(dolar, 2)) + "TL" + "\nGüncellendi: " + dataCotacao
     bot.publicar(api, "ImagensCriadas/MeioDolar.jpg", legenda)
     print("Postou!")
 else:
-    print("Dólar não mudou!")
+    print("Dolar değişmedi!")
