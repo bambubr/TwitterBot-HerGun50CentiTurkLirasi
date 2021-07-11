@@ -6,10 +6,10 @@ from os import environ
 import random
 
 # chaves de acesso da API / usuário do bot
-consumer_key = environ['CONSUMER_KEY']
-consumer_secret = environ['CONSUMER_SECRET']
-access_token = environ['ACCESS_KEY']
-access_token_secret = environ['ACCESS_SECRET']
+consumer_key = environ['qGrXdk5qOJPGf31Dee2N1KeoK']
+consumer_secret = environ['UwlgY2eCSGP92ylAyrpZSP07vRDrDS8M5shuYYe7Qm1QDMfLNU']
+access_token = environ['2330153707-xkmwPY7Jy7V0vhnmOiuU65HgAyayOYkf0tunJtJ']
+access_token_secret = environ['bg14NVz3c2EJkqy3LOr9QMhjzvMF4xyIYWCXhPxqQh8ce']
 
 # emojis felizes/tristes
 emojisFelizes = ["😊", "😁", "😄", "🥳", "😍", "🥰", "😻", "😆", "😋", "🤑"]
