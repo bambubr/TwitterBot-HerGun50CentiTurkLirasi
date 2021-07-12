@@ -15,7 +15,7 @@ class Imagem:
         return imgEscolhida
 
     def CriarImagemAlterada(self, cotacaoDolar):
-        cotacaoDolar = "R$ " + "{:.2f}".format(round(cotacaoDolar/2, 2))
+        cotacaoDolar = "{:.2f}".format(round(cotacaoDolar/2, 2)) + " ₺"
         img = Image.open("BancoDeImagens/" + self.selecionarImagem())
         draw = ImageDraw.Draw(img)
         font = ImageFont.truetype("Fontes/arial.ttf", round(img.height/5))
