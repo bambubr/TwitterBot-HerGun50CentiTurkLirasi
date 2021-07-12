@@ -45,9 +45,9 @@ if (dolarMudou):
     bot = Bot(consumer_key, consumer_secret, access_token, access_token_secret)
     api = bot.authenticate()
     if (dolarAumentou):
-        legenda = "Dolar yükseldi " + random.choice(emojisTristes) + "\n\nDolar değeri: " + "{:.2f}".format(round(dolar, 2)) + "TL" + "\nGüncellendi: " + dataCotacao
+        legenda = "Dolar yükseldi " + random.choice(emojisTristes) + "\n\nDolar değeri: " + "{:.2f}".format(round(dolar, 2)) + "₺" + "\nGüncellendi: " + dataCotacao
     else:
-        legenda = "Dolar düştü " + random.choice(emojisFelizes) + "\n\nDolar değeri: " + "{:.2f}".format(round(dolar, 2)) + "TL" + "\nGüncellendi: " + dataCotacao
+        legenda = "Dolar düştü " + random.choice(emojisFelizes) + "\n\nDolar değeri: " + "{:.2f}".format(round(dolar, 2)) + "₺" + "\nGüncellendi: " + dataCotacao
     bot.publicar(api, "ImagensCriadas/MeioDolar.jpg", legenda)
     print("Postou!")
 else:
