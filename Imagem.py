@@ -1,5 +1,6 @@
 import os
 import random
+import locale
 from PIL import Image
 from PIL import ImageFont
 from PIL import ImageDraw
@@ -15,7 +16,8 @@ class Imagem:
         return imgEscolhida
 
     def CriarImagemAlterada(self, cotacaoDolar):
-        cotacaoDolar = "{:.2f}".format(round(cotacaoDolar/2, 2)) + " ₺"
+        locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
+        cotacaoDolar="{0:n}".format(round(cotacaoDolar/2,2))+"₺"
         img = Image.open("BancoDeImagens/" + self.selecionarImagem())
         draw = ImageDraw.Draw(img)
         font = ImageFont.truetype("Fontes/DejaVuSans.ttf", round(img.height/5))
