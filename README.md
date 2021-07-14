@@ -1,7 +1,7 @@
 # TwitterBot-HerGun50CentiTurkLirasi
 Her gün 50 Cent'i tweet atan <a href="https://twitter.com/MeioDolar" target="_blank">@MeioDolar</a> botunun kodu Brezilya realine çevriliyor.<br>
 "<a href="https://www.facebook.com/50centemreais" target="_blank">Todo dia o 50 Cent convertido em real brasileiro</a>" Facebook sayfasından esinlenilmiştir.<br>
-Twitter hesabı: <a href="https://twitter.com/HerGun50Cent">@HerGun50Cent</a>
+Twitter hesabı: <a href="https://twitter.com/HerGun50Centi">@HerGun50Centi</a>
 
 ## Kullanılan ana araçlar
 * **Twitter geliştirici hesabı**
