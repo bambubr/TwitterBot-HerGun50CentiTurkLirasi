@@ -16,6 +16,7 @@ class Imagem:
         return imgEscolhida
 
     def CriarImagemAlterada(self, cotacaoDolar):
+        locale.setlocale(locale.LC_ALL, 'tr_TR.UTF8')
         cotacao=float(7)
         cotacaoDolar="{0:n}".format(round(cotacaoDolar/2,2))+"₺"
         img = Image.open("BancoDeImagens/" + self.selecionarImagem())
