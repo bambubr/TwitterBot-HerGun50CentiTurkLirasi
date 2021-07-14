@@ -44,6 +44,8 @@ img.CriarImagemAlterada(dolar)
 if (dolarMudou):
     bot = Bot(consumer_key, consumer_secret, access_token, access_token_secret)
     api = bot.authenticate()
+    user = api.get_user('twitter')
+    print("DEBUG: Authenticated on ", user.screen_name)
     if (dolarAumentou):
         legenda = "Dolar yükseldi " + random.choice(emojisTristes) + "\n\nDolar değeri: " + "{:.2f}".format(round(dolar, 2)) + "₺" + "\nGüncellendi: " + dataCotacao
     else:
