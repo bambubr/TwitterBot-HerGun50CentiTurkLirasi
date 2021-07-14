@@ -47,9 +47,9 @@ if (dolarMudou):
     user = api.get_user('twitter')
     print("DEBUG: Authenticated on ", user.screen_name)
     if (dolarAumentou):
-        legenda = "Dolar yükseldi " + random.choice(emojisTristes) + "\n\nDolar değeri: " + "{:.2f}".format(round(dolar, 2)) + "₺" + "\nGüncellendi: " + dataCotacao
+        legenda = "Dolar yükseldi " + random.choice(emojisTristes) + "\n\nDolar değeri: " + "{:.2f}".format(round(dolar, 2)) + "₺" + "\nGüncelleme: " + dataCotacao
     else:
-        legenda = "Dolar düştü " + random.choice(emojisFelizes) + "\n\nDolar değeri: " + "{:.2f}".format(round(dolar, 2)) + "₺" + "\nGüncellendi: " + dataCotacao
+        legenda = "Dolar düştü " + random.choice(emojisFelizes) + "\n\nDolar değeri: " + "{:.2f}".format(round(dolar, 2)) + "₺" + "\nGüncelleme: " + dataCotacao
     bot.publicar(api, "ImagensCriadas/MeioDolar.jpg", legenda)
     print("Postou!")
 else:
